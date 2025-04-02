@@ -4,6 +4,8 @@ Learning cucumber
 ## Description:
 Learning cucumber BDD in python and JS
 
+- to run use behave
+
 ## Issues:
 
 - ensure you are running in the correct dir
