@@ -1,4 +1,5 @@
 from behave import *
+from django.db import models
 
 @given('we have behave installed')
 def step_impl(context):
@@ -51,3 +52,7 @@ def step_impl(context):
 def step_impl(context):
     assert context.failed is False
 
+@given('a set of specific users')
+def step_impl(context):
+    for row in context.table:
+        model.add_user(name=row['name'], department=row['department'])
